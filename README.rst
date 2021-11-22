@@ -18,7 +18,11 @@ Welcome!
 
 Welcome to the documentation for django-slowtests!
 
-*Code tested on Django 1.6, 1.7, 1.8, 1.9, 1.10 and 1.11 with Python 2.7 and 3.6
+* Code tested on Django:
+    * 1.6, 1.7, 1.8, 1.9, 1.10, 1.11
+    * 2.0, 2.1, 2.2, 3.0, 3.1, 3.2, 4.0
+* Code tested on Python:
+    * 2.7, 3.6, 3.7, 3.8, 3.9, 3.10
 
 
 Instructions
@@ -45,16 +49,17 @@ Instructions
 
 
 3.1. Save report to file::
+
     $ python manage.py test --slowreportpath report.json
 
 3.2. Generating full reports to file::
     In some situations, you may need to generate full tests reports. To do so,
     set NUM_SLOW_TESTS to None in your settings and run the following command:
+
     $ python manage.py test --slowreportpath report.json
 
 
 4. Sample output::
-
 
     $ python manage.py test
     Creating test database for alias 'default'...
